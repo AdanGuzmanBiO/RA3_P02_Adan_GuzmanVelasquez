@@ -7,6 +7,13 @@ def comprobarInt():
     except ValueError:
         print("Valor incorrecte")
 
+def comprobarStr():
+    try:
+        return input()
+        
+    except ValueError:
+        print ("Valor incorrecte")
+
 def comprobarIndexLlista(llista):
     try:
         return int(input("Escull el teu index: "))
@@ -27,6 +34,7 @@ while True:
 
     print("\nLes opciones que pots triar son: ")
     print("1. Mostra les dades de tots els alumnes")
+    print("2. Agregar un nou alumne")
 
     opcio = comprobarInt()
     match opcio:
@@ -38,7 +46,10 @@ while True:
 
 
         case 2:
-            print("Opció 2")
+            print("Dades del nou alumne: ")
+            nom = None
+            print(f"\nIndica el nom que vols: {nom = comprobarStr}")
+            
 
         
         case 3:
